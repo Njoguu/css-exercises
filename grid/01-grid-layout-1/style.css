@@ -45,3 +45,20 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+/* MY SOLUTION */
+.container{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 12.5% 12.5% 62.5% 12.5%;
+  gap: 15px;
+}
+.header, .footer{
+  grid-column: 1 / 3;
+}
+.sidebar{
+  grid-row: 2 / 4;
+}
+.nav, .article{
+  grid-column: 2;
+}
